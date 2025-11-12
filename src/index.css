@@ -1,0 +1,100 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.episode-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  border-right: 1px solid #333;
+}
+
+.episode-item {
+  padding: 12px 10px;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.episode-item:hover {
+  background-color: #111;
+}
+
+.episode-item.selected {
+  background-color: #ccc;
+  color: #000;
+}
+
+.episode-details {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.episode-details h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.episode-details h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.episode-details p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
